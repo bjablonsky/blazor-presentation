@@ -1,0 +1,68 @@
+﻿<div class="main-nav">
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">BlazorQuick</a>
+        </div>
+        <div class="clearfix"></div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <NavLink href="/" Match=NavLinkMatch.All>
+                        <span class="glyphicon glyphicon-home"></span> Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/counter">
+                        <span class="glyphicon glyphicon-education"></span> Counter
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/fetchdata">
+                        <span class="glyphicon glyphicon-th-list"></span> Fetch data
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/jsinterop">
+                        <span class="glyphicon glyphicon-th-list"></span> JS Interop - JS -> C#
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/csharpinterop">
+                        <span class="glyphicon glyphicon-th-list"></span> JS Interop - C# -> JS
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/twowaydb">
+                        <span class="glyphicon glyphicon-th-list"></span> Two Way Data Binding
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/route">
+                        <span class="glyphicon glyphicon-th-list"></span> Route Example
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/anotherroute">
+                        <span class="glyphicon glyphicon-th-list"></span> Same Route Example - Another Route
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/routecolor/Blue">
+                        <span class="glyphicon glyphicon-th-list"></span> Route - Blue
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/routecolor/Green">
+                        <span class="glyphicon glyphicon-th-list"></span> Route - Green
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

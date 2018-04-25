@@ -1,0 +1,21 @@
+﻿@page "/twowaydb"
+
+@*
+    Provides an example of two way databinding.
+    
+    Input text box is bound to the YourName string
+
+    YourName is passed along to the WordCount component located at /Shared/WordCount.cshtml
+*@
+
+<h1>Two Way Data Binding</h1>
+
+Please enter your name: <input type="text" bind="YourName" />
+<br />
+<h3>Hi, @YourName!</h3>
+
+<WordCount Word=@YourName />
+
+@functions {
+    private string YourName { get; set; } = "";
+}

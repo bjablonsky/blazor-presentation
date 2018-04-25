@@ -1,0 +1,23 @@
+﻿@page "/jsinterop"
+@using Microsoft.AspNetCore.Blazor.Browser.Interop
+
+@*
+    Demonstrates how to call a JavaScript function from C# using the JS Interop
+    
+    Must include the Blazor.Browser.Interop to call the RegisteredFunction.Invoke<>() function.
+
+    See the /wwwroot/js/JSInteropJSExample.js for the JavaScript function that is invoked
+*@
+
+<h1>JavaScript Interop Example</h1>
+
+Demonstrates how to call a JavaScript function from C#
+<br />
+<button onclick="@InteropMethod">Click me</button>
+
+@functions {
+    public static void InteropMethod()
+    {
+        RegisteredFunction.Invoke<bool>("InteropAlert", "Hello World, from C#!");
+    }
+}

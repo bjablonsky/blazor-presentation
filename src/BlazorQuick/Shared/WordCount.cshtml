@@ -1,0 +1,21 @@
+﻿@*
+    Provides an example of two way databinding using components
+
+    The parameter Word is used as an attribute on the <WordCount> component to pass along data. The getter on the NumChars property takes the data passed via Word and returns its length.
+
+    See /Pages/TwoWayDataBinding.cshtml for <WordCount> use.
+*@
+
+<h3>Your word contains @NumChars characters</h3>
+
+@functions {
+    public string Word { get; set; }
+
+    private int NumChars
+    {
+        get
+        {
+            return Word.Length;
+        }
+    }
+}
